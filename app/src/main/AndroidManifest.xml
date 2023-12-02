@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".AdminGenerateAnnouncement"
+            android:exported="true" />
+        <activity
+            android:name=".AdminGenerateEvents"
+            android:exported="true" />
+        <activity
+            android:name="AdminViewComplains"
+            android:exported="true" />
+        <activity
+            android:name="AdminViewEvents"
+            android:exported="true" />
+        <activity
+            android:name=".AdminViewEventDetail"
+            android:exported="true" />
+        <activity
+            android:name=".AdminOperations"
+            android:exported="true" />
+        <activity
+            android:name=".StudentCommentEvent"
+            android:exported="true" />
+        <activity
+            android:name=".StudentViewAnnouncementEvent"
+            android:exported="true" />
+        <activity
+            android:name=".StudentViewRSVPEvents"
+            android:exported="true" />
+        <activity
+            android:name=".StudentGenerateComplaint"
+            android:exported="true" />
+        <activity
+            android:name=".StudentCheckQualification"
+            android:exported="true" />
+        <activity
+            android:name=".StudentCheckQualificationQuestions"
+            android:exported="true" />
+        <activity
+            android:name=".StudentOperations"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

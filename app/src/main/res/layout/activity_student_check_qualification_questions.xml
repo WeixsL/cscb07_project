@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentCheckQualification">
+
+    <RelativeLayout
+        android:id="@+id/login_background"
+        android:layout_width="405dp"
+        android:layout_height="117dp"
+        android:background="@drawable/pic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/qualificationBanner"
+        android:layout_width="201dp"
+        android:layout_height="31dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Check if you are qualified:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_background"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/studentCheckQualiQ2"
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Question2"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentCheckQualiQ1"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/studentCheckQualiQ1"
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Question1"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qualificationBanner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/studentCheckQualiQ3"
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Question3"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentCheckQualiQ2"
+        app:layout_constraintVertical_bias="0.196" />
+
+    <Button
+        android:id="@+id/btnStudentCheckQuali"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#40FF9800"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="onClick"
+        android:text="Check your qualification"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentCheckQualiQ3"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <Button
+        android:id="@+id/btnStudentCheckQualiBack"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#6FDCDCDC"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="onClick"
+        android:text="back"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStudentCheckQuali"
+        app:layout_constraintVertical_bias="0.14" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentCheckQualiQ1">
+
+        <RadioButton
+            android:id="@+id/q1True"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:checked="false"
+            android:onClick="checkButton"
+            android:text="True"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="50dp"
+            tools:layout_conversion_absoluteWidth="70dp"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="322dp" />
+
+        <RadioButton
+            android:id="@+id/q1False"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="False"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="50dp"
+            tools:layout_conversion_absoluteWidth="70dp"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="372dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentCheckQualiQ2">
+
+        <RadioButton
+            android:id="@+id/q2True"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:checked="false"
+            android:onClick="checkButton"
+            android:text="True"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="50dp"
+            tools:layout_conversion_absoluteWidth="70dp"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="322dp" />
+
+        <RadioButton
+            android:id="@+id/q2False"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="False"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="50dp"
+            tools:layout_conversion_absoluteWidth="70dp"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="372dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentCheckQualiQ3">
+
+        <RadioButton
+            android:id="@+id/q3True"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:checked="false"
+            android:onClick="checkButton"
+            android:text="True"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="50dp"
+            tools:layout_conversion_absoluteWidth="70dp"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="322dp" />
+
+        <RadioButton
+            android:id="@+id/q3False"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="False"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="50dp"
+            tools:layout_conversion_absoluteWidth="70dp"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="372dp" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

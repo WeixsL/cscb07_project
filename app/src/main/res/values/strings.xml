@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_student_post">StudentPOStActivity</string>
+    <string name="student_log_out">Log Out</string>
+    <string name="view_announcement_and_event">View announcement and event</string>
+    <string name="check_qualification">Check qualification</string>
+    <string name="student_operations">Student Operations:</string>
+    <string name="rsvp_for_an_event">RSVP for an event</string>
+    <string name="comment_rate_an_event">Comment/Rate an event</string>
+    <string name="post_complaint">Post Complaint</string>
+    <string name="back">back</string>
+    <string name="generate">Generate</string>
+    <string name="strForGoRegister">Don\'t have an account?\nClick here to register</string>
+</resources>
